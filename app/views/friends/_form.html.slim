@@ -6,19 +6,15 @@
         - @friend.errors.full_messages.each do |message|
           li = message
 
-  .field
-    = f.label :first_name
-    = f.text_field :first_name
-  .field
-    = f.label :last_name
-    = f.text_field :last_name
-  .field
-    = f.label :email
-    = f.text_field :email
-  .field
-    = f.label :phone
-    = f.text_field :phone
-  .field
-    = f.label :twitter
-    = f.text_field :twitter
-  .actions = f.submit
+  .field.form-group
+    = f.text_field :first_name, class: "form-control", placeholder: "First Name"
+  .field.form-group
+    = f.text_field :last_name, class: "form-control", placeholder: "Last Name"
+  .field.form-group
+    = f.text_field :email, class: "form-control", placeholder: "Email Address"
+  .field.form-group
+    = f.text_field :phone, class: "form-control", placeholder: "Phone Number"
+  .field.form-group
+    = f.text_field :twitter, class: "form-control", placeholder: "Twitter Handle"
+  br
+  .actions = f.submit class: "btn btn-secondary"

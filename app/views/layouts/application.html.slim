@@ -10,4 +10,7 @@ html
   body
     = render 'home/header'
     .container
+      br
+      - if notice
+        = render "layouts/alerts"
       = yield

@@ -18,9 +18,9 @@ table.table.table-striped.table-bordered.table-hover
         td = friend.email
         td = friend.phone
         td = friend.twitter
-        td = link_to 'Show', friend
-        td = link_to 'Edit', edit_friend_path(friend)
-        td = link_to 'Destroy', friend, data: { confirm: 'Are you sure?' }, method: :delete
+        td = link_to 'Show', friend, class: "btn btn-secondary"
+        td = link_to 'Edit', edit_friend_path(friend), class: "btn btn-secondary"
+        td = link_to 'Destroy', friend, data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-danger"
 
 br
 
