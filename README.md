@@ -1,24 +1,12 @@
-# README
+# Friends
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo is my version of the project covered in FreeCodeCamp's "Learn Ruby on Rails - Full Course"
 
-Things you may want to cover:
+* Video tutorial: https://www.youtube.com/watch?v=fmyvWz5TUWg
 
-* Ruby version
+* Ruby 2.7.0
 
-* System dependencies
+* Rails 6.0.3
 
-* Configuration
+* Here's how I got bootstrap to work: https://blog.makersacademy.com/how-to-install-bootstrap-and-jquery-on-rails-6-da6e810c1b87
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
