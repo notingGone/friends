@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'home/index'
   root 'home#index'
+  get 'home/about'
   get 'bootstrap', to: 'home#bootstrap'
-  get 'about', to: 'home#about'
+  # get 'home/index'
+  # get 'about', to: 'home#about'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
