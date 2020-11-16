@@ -4,4 +4,7 @@ class HomeController < ApplicationController
 
   def bootstrap
   end
+
+  def about
+  end
 end
