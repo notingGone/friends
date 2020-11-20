@@ -7,8 +7,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
     ul.navbar-nav.mr-auto
       li.nav-item
         = link_to "About Us", home_about_path, class: 'nav-link'
-      li.nav-item
-        = link_to "Friends", friends_path, class: 'nav-link'
       - if user_signed_in?
         li.nav-item
           = link_to "Add Friend", new_friend_path, class: 'nav-link'
