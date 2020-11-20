@@ -8,19 +8,22 @@ table.table.table-striped.table-bordered.table-hover
       th Email
       th Phone
       th Twitter
+      th User ID
       th colspan="3"
 
   tbody
     - @friends.each do |friend|
-      tr
-        td = friend.first_name
-        td = friend.last_name
-        td = friend.email
-        td = friend.phone
-        td = friend.twitter
-        td = link_to 'Show', friend, class: "btn btn-secondary"
-        td = link_to 'Edit', edit_friend_path(friend), class: "btn btn-secondary"
-        td = link_to 'Destroy', friend, data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-danger"
+      - if friend.user == current_user
+        tr
+          td = friend.first_name
+          td = friend.last_name
+          td = friend.email
+          td = friend.phone
+          td = friend.twitter
+          td = friend.user_id
+          td = link_to 'Show', friend, class: "btn btn-secondary"
+          td = link_to 'Edit', edit_friend_path(friend), class: "btn btn-secondary"
+          td = link_to 'Destroy', friend, data: { confirm: 'Are you sure?' }, method: :delete, class: "btn btn-danger"
 
 br
 
