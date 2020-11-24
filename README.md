@@ -10,3 +10,4 @@ This repo is my version of the project covered in FreeCodeCamp's "Learn Ruby on 
 
 * Here's how I got bootstrap to work: https://blog.makersacademy.com/how-to-install-bootstrap-and-jquery-on-rails-6-da6e810c1b87
 
+* Using slim instead of erb
